@@ -186,7 +186,7 @@
 
     myConnector.getData = function(table, doneCallback) {
     	if (table.tableInfo.id == 'customerStatistics') {
-    		$.ajax('https://ru.flespi.io/platform/customer/statistics?data={"count":100,"reverse":true}', {
+    		$.ajax('https://flespi.io/platform/customer/statistics?data={"count":100,"reverse":true}', {
 	    		success: function(resp) {
 			    	var feat = resp.result,
 			        	tableData = [];
@@ -241,7 +241,7 @@
     	}
    		
    		if (table.tableInfo.id == 'devicesInfo') {
-   			$.ajax('https://ru.flespi.io/gw/devices/all?fields=last_active,id,name,device_type_id,settings,messages_ttl,blocked,connected,configuration', {
+   			$.ajax('https://flespi.io/gw/devices/all?fields=last_active,id,name,device_type_id,settings,messages_ttl,blocked,connected,configuration', {
 	    		success: function(resp) {
 			    	var feat = resp.result,
 			        	tableData = [];
