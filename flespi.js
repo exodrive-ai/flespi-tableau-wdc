@@ -1,5 +1,3 @@
-<script>
-
 (function () {
     var myConnector = tableau.makeConnector();
 
@@ -293,4 +291,3 @@ $(document).ready(function () {
 });
 
 })();
-</script>
